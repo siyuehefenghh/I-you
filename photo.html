@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哎呀哎呀，终于戴上围脖了~</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: wheat;
+            width: 100%;
+        }
+
+        ul {
+            display: table;
+            width: 100%;
+        }
+
+        li {
+            display: table-cell;
+            width: 30%;
+            /* border: 1px solid rebeccapurple; */
+            text-align: center;
+            vertical-align: middle;
+
+        }
+
+        .list1 {
+            display: table-cell;
+            width: 40%;
+        }
+
+        img {
+            width: 80%;
+            border-radius: 10%;
+        }
+
+        .h2 {
+            margin: 10px auto;
+            text-align: center;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div class="h2">
+        <h2>白色的围脖，暖和哦~</h2>
+    </div>
+    <ul class="list1">
+        <li><img id="test" class="show" src="https://i.loli.net/2021/04/30/gbU7htGcuyjZPDz.jpg" alt="">
+        <li><img class="show"
+                src="https://img14.360buyimg.com/ddimg/jfs/t1/191409/25/704/91253/608ba551E9a045aa3/4b03fe6a8a46b6b3.jpg"
+                alt="">
+    </ul>
+    <ul class="list2">
+        <li><img class="show"
+                src="https://img11.360buyimg.com/ddimg/jfs/t1/195285/5/573/94774/608ba550E431248af/517074951ed02296.jpg"
+                alt="">
+        <li><img class="show"
+                src="https://img14.360buyimg.com/ddimg/jfs/t1/191470/33/674/113248/608ba550Ed2722b3f/5761f04f77e2a8cf.jpg"
+                alt="">
+        <li><img class="show"
+                src="https://img13.360buyimg.com/ddimg/jfs/t1/173994/39/7182/79577/608ba551E9a5582dd/18a394ea5d9f4c0c.jpg"
+                alt="">
+    </ul>
+    <ul class="list3">
+        <li><img class="show"
+                src="https://img14.360buyimg.com/ddimg/jfs/t1/175425/27/7066/97684/608ba550E1ae20428/5ef52ff172e20fde.jpg"
+                alt="">
+        <li><img class="show"
+                src="https://img14.360buyimg.com/ddimg/jfs/t1/179239/24/1657/86841/608ba550E20224b61/a3fb2498bbb255c1.jpg"
+                alt="">
+        <li><img class="show"
+                src="https://img12.360buyimg.com/ddimg/jfs/t1/179964/4/1624/111058/608ba550E42b2aff6/08b6cc8792eb6ba7.jpg"
+                alt="">
+    </ul>
+</body>
+<script>
+    $(function () {
+        time = setInterval("show()", 1000);
+    });
+    function show() {
+        $("img.show").fadeIn(3000);
+    }
+</script>
+
+</html>
