@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <img src="https://i.loli.net/2021/04/29/6Qy5xhNndMZpsmF.jpg" width="200" border="0" usemap="#Map" />
+    <map name="Map" id="Map">
+        <area shape="circle" coords="100,100,100" href="http://www.baidu.com" target="_blank" />
+    </map>
+
+    <div id="test">
+    </div>
+    <button id="btn">this</button>
+
+    <ul>
+        <li id="li" onclick="javascript: location.href = 'https://www.baidu.com/'">点击</li>
+    </ul>
+</body>
+<script>
+
+    document.getElementById("test").onclick = function () {
+        javascript: location.href = 'https://www.baidu.com/'
+    }
+
+    var div = document.getElementById("test")
+
+</script>
+
+</html>
